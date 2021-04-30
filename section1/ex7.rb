@@ -19,4 +19,4 @@ mothers_name = gets.chomp
 print "What is your fathers name? "
 fathers_name = gets.chomp
 
-puts "So, you were born in #{location} to #{mothers_name} and #{fathers_name}."
+puts "So, you were born in #{location} to #{mothers_name} and #{fathers_name}"
