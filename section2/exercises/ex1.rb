@@ -3,6 +3,7 @@
 # If it isn't indented it will still run as expected, but it makes it difficult for others to read your code 
 # If you change the initial values for people, cats and dogs what is printed in the terminal will change based on the conditional coded
 # The code x += 1 is the same as doing x = x + 1 but involves less typing
+# If you don't end it with end then Ruby doesn't know where your if-statement ends and where others might begin, so it will give you a syntax error
 
 
 # people = 20
