@@ -60,10 +60,22 @@
 
 1. In your own words, what is the purpose of a method?
 
+  - Ruby methods are similar to functions in any other programming language.  Ruby methods are used to bundle one or more repeatable statements into a single unit.
+
 1. Create a method named `hello` that will print `"Sam I am"`.
+  
+  -def hello()
+    puts "Sam I am."
+  end 
+  
+  -hello()
 
 1. Create a method named `hello_someone` that takes an argument of `name` and prints `"#{name} I am"`.
 
+  -def hello_someone(name)
+    puts "#{name} I am."
+  end 
+
 1. How would you call or execute the method that you created above?
 
-1. What questions do you have about methods in Ruby?
+  hello_someone('Sam')
