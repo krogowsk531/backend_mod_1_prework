@@ -8,24 +8,25 @@ foods = {apples: 23, grapes: 507, eggs: 48}
 p foods
 
 # Write code that prints a hash holding zoo animal inventory:
-zoo = #YOUR CODE HERE
+zoo = { 'lions' => 5, 'tigers' => 3, 'bears' => '1'}
 p zoo
 
 # Write code that prints all of the 'keys' of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+zoo.each { |key, value| puts key}
 
 # Write code that prints all of the 'values' of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+zoo.each { |key, value| puts value}
 
 # Write code that prints the value of the first animal of the zoo variable 
 # you created above:
-# YOUR CODE HERE
+puts zoo['lions']
 
 # Write code that adds an animal to the zoo hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+zoo['flamingos'] = 21
+puts zoo
 
 
 #-------------------
@@ -39,16 +40,20 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email = {'sender' => 'John', 'subject' => 'money', 'date' => 'January 31st, 2021', 'read' => true, 'responded' => true}
+
 # Write code that prints your email hash to the terminal.
+
+p email
 
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -99,3 +104,33 @@ puts posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Object Literals, using the same 
 # key-value pairs you used in your email Object above.
 # Then, log the email Array to the console.
+
+emails = [
+  {
+    'sender' => 'Amy',
+    'subject' => 'Vacation',
+    'date' => 'February 1st, 2021', 
+    'read' => true,
+    'responded' => true,
+  },
+  {
+    'sender' => 'Alan',
+    'subject' => 'Health Update',
+    'date' => 'February 21st, 2021', 
+    'read' => true,
+    'responded' => false,
+  }, 
+  {
+    'sender' => 'Scott',
+    'subject' => 'Engagement',
+    'date' => 'March 1st, 2021', 
+    'read' => false,
+    'responded' => false,
+  },
+]
+
+puts emails
+
+
+
+
